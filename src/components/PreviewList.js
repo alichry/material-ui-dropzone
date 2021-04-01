@@ -135,7 +135,7 @@ PreviewList.propTypes = {
     fileObjects: PropTypes.arrayOf(PropTypes.object).isRequired,
     getPreviewIcon: PropTypes.func.isRequired,
     handleRemove: PropTypes.func.isRequired,
-    previewChipProps: PropTypes.object | PropTypes.func,
+    previewChipProps: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
     previewGridClasses: PropTypes.object,
     previewGridProps: PropTypes.object,
     showFileNames: PropTypes.bool,
