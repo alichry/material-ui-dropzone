@@ -181,13 +181,19 @@ function PreviewList(_ref2) {
     }), fileObjects.map(function (fileObject, i) {
       var _fileObject$file$name, _fileObject$file;
 
+      var chipProps = previewChipProps;
+
+      if (typeof previewChipProps === 'function') {
+        chipProps = previewChipProps(fileObject);
+      }
+
       return /*#__PURE__*/React.createElement(Grid, _extends({}, previewGridProps.item, {
         item: true,
         key: "".concat((_fileObject$file$name = (_fileObject$file = fileObject.file) === null || _fileObject$file === void 0 ? void 0 : _fileObject$file.name) !== null && _fileObject$file$name !== void 0 ? _fileObject$file$name : 'file', "-").concat(i),
         className: classes.imageContainer
       }), /*#__PURE__*/React.createElement(Chip, _extends({
         variant: "outlined"
-      }, previewChipProps, {
+      }, chipProps, {
         label: fileObject.file.name,
         onDelete: handleRemove(i)
       })));
