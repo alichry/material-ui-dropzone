@@ -230,7 +230,7 @@ process.env.NODE_ENV !== "production" ? PreviewList.propTypes = {
   fileObjects: PropTypes.arrayOf(PropTypes.object).isRequired,
   getPreviewIcon: PropTypes.func.isRequired,
   handleRemove: PropTypes.func.isRequired,
-  previewChipProps: PropTypes.object,
+  previewChipProps: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
   previewGridClasses: PropTypes.object,
   previewGridProps: PropTypes.object,
   showFileNames: PropTypes.bool,
