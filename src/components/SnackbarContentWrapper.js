@@ -1,6 +1,6 @@
 import IconButton from '@mui/material/IconButton';
 import SnackbarContent from '@mui/material/SnackbarContent';
-import {withStyles} from '@mui/material/styles';
+import {withStyles} from '@mui/styles';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CloseIcon from '@mui/icons-material/Close';
 import ErrorIcon from '@mui/icons-material/Error';

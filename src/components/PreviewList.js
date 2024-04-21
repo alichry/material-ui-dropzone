@@ -2,7 +2,7 @@ import Chip from '@mui/material/Chip';
 import Fab from '@mui/material/Fab';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import {withStyles} from '@mui/material/styles';
+import {withStyles} from '@mui/styles';
 import DeleteIcon from '@mui/icons-material/Delete';
 import clsx from 'clsx';
 import * as React from 'react';
